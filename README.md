@@ -3,7 +3,7 @@
 ---
 ## **Grupo de 2 alunos:**
 - Kaike Vitorino De Oliveira 22301194
-- Gabriel Salustiano
+- Gabriel Salustiano 22301008
 ---
 ### 1. Um armazém trabalha com 100 mercadorias diferentes identificadas pelos números inteiros de 1 a 100. O dono do armazém anota a quantidade de cada mercadoria vendida durante o mês. Ele tem uma tabela que indica para cada mercadoria o preço de venda.
 Escreva um programa para calcular o faturamento mensal do armazém, isto é:
