@@ -12,14 +12,14 @@ Escreva um programa para calcular o faturamento mensal do armazém, isto é:
   **Faturamento = ∑ ∗ preço 𝑛
   𝑘=0 k**
   
-**Funções para o programa 1:**
-- **a) Menu para chamada das opções;**
-- **b) Ler os dados e quantidades vendidas**
-- **c) Cálculo do faturamento**
-- **d) Impressão do faturamento discriminando as mercadorias e preços, bem como a totalização de vendas conforme a equação número 1.**
-- **e) Percentuais de vendas por mercadoria sobre o total faturado.**
-- **f) Gravar os dados das vendas em arquivos tipo txt.**
-- **g) Imprimir gráfico de vendas para as cinco mercadorias mais vendidas no referido mês. No eixo x do gráfico deverá conter as mercadorias e no eixo y do gráfico as quantidades vendidas.****
+Funções para o programa 1:
+- a) Menu para chamada das opções;
+- b) Ler os dados e quantidades vendidas
+- c) Cálculo do faturamento
+- d) Impressão do faturamento discriminando as mercadorias e preços, bem como a totalização de vendas conforme a equação número 1.
+- e) Percentuais de vendas por mercadoria sobre o total faturado.
+- f) Gravar os dados das vendas em arquivos tipo txt.
+- g) Imprimir gráfico de vendas para as cinco mercadorias mais vendidas no referido mês. No eixo x do gráfico deverá conter as mercadorias e no eixo y do gráfico as quantidades vendidas.
 ---
 ### 2. Faça um programa para a solução do problema abaixo:
 - a) Criar um arquivo <folha_pag> para gravar os dados com a seguinte estrutura: nome, cargo, salário, horas trabalhadas para n funcionários.
