@@ -90,11 +90,3 @@ class Armazem:
         plt.ylabel('Quantidade Vendida')
         plt.title('Top 5 Mercadorias Mais Vendidas')
         plt.show()
-
-# Função principal para executar o programa
-def main():
-    armazem = Armazem()
-    armazem.menu_principal()
-
-main()
-
