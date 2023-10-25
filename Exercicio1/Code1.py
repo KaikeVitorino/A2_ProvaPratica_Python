@@ -34,19 +34,24 @@ class Armazem:
                 print("Opcao invalida!")
 
     def registrar_venda(self):
-        mercadoria = int(input("Informe o numero da mercadoria (1 a 100): "))
-        quantidade = int(input("Informe a quantidade vendida: "))
-        preco = float(input("Informe o preço da mercadoria: "))
+        while True:
+            try:
+                mercadoria = int(input("Informe o numero da mercadoria (1 a 100): "))
+                quantidade = int(input("Informe a quantidade vendida: "))
+                preco = float(input("Informe o preço da mercadoria: "))
 
-        if 1 <= mercadoria <= 100:
-            if mercadoria in self.quantidade_vendidas:
-                self.quantidade_vendidas[mercadoria] += quantidade
-            else:
-                self.quantidade_vendidas[mercadoria] = quantidade
+                if 1 <= mercadoria <= 100:
+                    if mercadoria in self.quantidade_vendidas:
+                        self.quantidade_vendidas[mercadoria] += quantidade
+                    else:
+                        self.quantidade_vendidas[mercadoria] = quantidade
 
-            self.precos[mercadoria] = preco
-        else:
-            print("Numero de mercadoria invalido.")
+                    self.precos[mercadoria] = preco
+                    break
+                else:
+                    print("Numero de mercadoria invalido.")
+            except ValueError:
+                print("Digite um número inteiro válido.")
 
     def calcular_faturamento(self):
         faturamento_total = 0
