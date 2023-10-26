@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Feito por Kaike Vitorino De Oliveira - RA: 22301194
+
 class Armazem:
     def __init__(self):
         self.quantidade_vendidas = {}
