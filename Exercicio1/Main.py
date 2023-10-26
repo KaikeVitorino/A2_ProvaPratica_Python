@@ -1,5 +1,5 @@
 from Code1 import *
 
 # Função principal para executar o programa
-armazem = Armazem()
-armazem.menu_principal()
+Armazem = Armazem()
+Armazem.menu_principal()

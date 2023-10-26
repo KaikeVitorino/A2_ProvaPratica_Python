@@ -52,8 +52,8 @@ class Armazem:
                     break
                 else:
                     print("Numero de mercadoria invalido.")
-            except ValueError as e:
-                print(f"Erro: {e}. Digite um número inteiro válido.")
+            except ValueError:
+                print("Digite um número inteiro válido.")
 
     def calcular_faturamento(self):
         faturamento_total = 0
