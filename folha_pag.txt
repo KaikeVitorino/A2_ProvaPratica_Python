@@ -1,3 +1,0 @@
-   Nome       Cargo  Salario  Horas Trabalhadas  Desconto IR  Salario Liquido
-  Kaike Programador  23000.0               60.0       6210.0          16790.0
-Gabriel    Recepcao   2000.0               60.0        300.0           1700.0
