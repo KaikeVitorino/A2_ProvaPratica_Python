@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib as plt
 import numpy as np
 
-
 def menu():
     while True:
         print("                      ")
@@ -23,31 +22,27 @@ def menu():
         else:
             print("Escolha inválida, tente novamente")
 
-
 class Funcionario:
-    def __init__ (self,nome,cargo,salario,horas):
+    def __init__(self, nome, cargo, salario, horas):
         self.nome = nome
         self.cargo = cargo
         self.horas = horas
         self.salario = salario
 
 class cadastros:
-    def __init__ (self):
+    def __init__(self):
         self.funcionarios = []
         self.descontos_ir = 0
         self.total_salario_bruto = 0
         self.total_salario_liquido = 0
-    
-
-
 
     def ler_dados(self):
-            nome = input("Nome do funcionário: ")
-            cargo = input("Cargo do funcionário: ")
-            salario = float(input("Salário do funcionário: "))
-            horas = float(input("Horas trabalhadas do funcionário: "))
-            funcionario = Funcionario(nome, cargo, salario, horas)
-            self.funcionarios.append(funcionario)
+        nome = input("Nome do funcionário: ")
+        cargo = input("Cargo do funcionário: ")
+        salario = float(input("Salário do funcionário: "))
+        horas = float(input("Horas trabalhadas do funcionário: "))
+        funcionario = Funcionario(nome, cargo, salario, horas)
+        self.funcionarios.append(funcionario)
 
     def calculo_ir(self):
         for funcionario in self.funcionarios:
@@ -67,7 +62,6 @@ class cadastros:
             self.total_salario_liquido += funcionario.salario_liquido
         print("Concluido")
 
-
     def imprimir_relatorio(self):
         df = pd.DataFrame([(f.nome, f.cargo, f.salario, f.horas, f.desconto_ir, f.salario_liquido)
                            for f in self.funcionarios],
@@ -82,9 +76,9 @@ class cadastros:
             file.write(report)
 
 
-            print(f"Total de descontos de IR: {self.descontos_ir}")
-            print(f"Total de salário bruto: {self.total_salario_bruto}")
-            print(f"Total de salário líquido: {self.total_salario_liquido}")
+        print(f"Total de descontos de IR: {self.descontos_ir}")
+        print(f"Total de salário bruto: {self.total_salario_bruto}")
+        print(f"Total de salário líquido: {self.total_salario_liquido}")
 
 cadastros_instance = cadastros()
 if __name__ == "__main__":
