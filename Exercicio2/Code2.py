@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib as plt
 import numpy as np
 
+# Feito por Gabriel Salustiano - RA: 22301008
+
 def menu():
     while True:
         print("                      ")
