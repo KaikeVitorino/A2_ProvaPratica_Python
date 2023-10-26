@@ -69,10 +69,18 @@ class cadastros:
 
 
     def imprimir_relatorio(self):
-            df = pd.DataFrame([(f.nome, f.cargo, f.salario, f.horas, f.desconto_ir, f.salario_liquido)
-                            for f in self.funcionarios],
-                            columns=["Nome", "Cargo", "Salário", "Horas Trabalhadas", "Desconto IR", "Salário Líquido"])
-            print(df)
+        df = pd.DataFrame([(f.nome, f.cargo, f.salario, f.horas, f.desconto_ir, f.salario_liquido)
+                           for f in self.funcionarios],
+                          columns=["Nome", "Cargo", "Salário", "Horas Trabalhadas", "Desconto IR", "Salário Líquido"])
+        report = df.to_string(index=False)  
+
+        
+        print(report)
+
+        
+        with open("folha_pag.txt", "w") as file:
+            file.write(report)
+
 
             print(f"Total de descontos de IR: {self.descontos_ir}")
             print(f"Total de salário bruto: {self.total_salario_bruto}")
