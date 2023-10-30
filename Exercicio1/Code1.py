@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Feito por Kaike Vitorino - RA: 22301194
+# Aqui voce tem o codigo BRUTO da primeira questao, todas as funcoe e classes
 
 class Armazem:
     def __init__(self):
